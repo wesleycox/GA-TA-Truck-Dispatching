@@ -15,6 +15,22 @@ Additionally, some classes use the lp_solve software library for mixed integer l
 The Java .jar library for lp_solve has been included in this distribution. Include it the classpath when required. Further installation is required to make use of it however; for installation instructions and further information see:
 
 lpsolve.sourceforge.net/5.5
+
+Example main files are provided: Main.java and MainN.java, for simple and complex network problems respectively.
+
+Main can be run as:
+
+java -cp .;classes;lib/lpsolve55.jar Main filename numSamples runtime solIndex...
+
+	filename	an valid input file path, e.g. input/problem1-1.in
+
+	numSamples	the integer number of simulations to run per solution, e.g. 50
+
+	runtime		the real-valued shift length per simulation, e.g. 500
+
+	solIndex	a valid solution index -- 0 for the GA, 1 for MTCT, 2 for MTWT, 3 for MTST, 4 for MSWT, 5 for DISPATCH
+
+MainN is run similarly.
 #
 Input:
 
