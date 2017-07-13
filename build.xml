@@ -1,0 +1,26 @@
+<project name="mines" basedir="." default="compile">
+	<property name="baseDir" value="."/>
+	<property name="srcDir" value="./src"/>
+	<property name="classDir" value="./classes"/>
+	<property name="libDir" value="./lib"/>
+
+	<target name="clean">
+		<delete>
+			<fileset dir="${classDir}">
+				<include name="**/*.class"/>
+			</fileset>
+		</delete>
+	</target>
+
+	<path id="classpath">
+		<fileset dir="${libDir}">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement path="${classDir}"/>
+	</path>
+
+	<target name="compile">
+		<mkdir dir="${classDir}"/>
+		<javac includeantruntime="false" srcdir="${srcDir}" destdir="${classDir}" classpathref="classpath" debug="true"/>
+	</target>
+</project>
