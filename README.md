@@ -46,9 +46,9 @@ where _NS_ is the number of shovels.
 
 _NS_ lines of:
 
-_FM FSD_
+_TTM TTSD FM FSD_
 
-where for the nth line, _FM_ is the mean filling time at the nth shovel, and _FSD_ is the standard deviation.
+where for the nth line, _TTM_ is the mean travel time to the nth shovel, _TTSD_ is the standard deviation, _FM_ is the mean filling time at the nth shovel, and _FSD_ is the standard deviation.
 
 Any deviation from this format will result in error.
 #
@@ -80,9 +80,9 @@ where _NS_ is the number of shovels.
 
 _NS_ lines of:
 
-_TTM TTSD FM FSD_
+_FM FSD_
 
-where for the nth line, _TTM_ is the mean travel time to the nth shovel, _TTSD_ is the standard deviation, _FM_ is the mean filling time at the nth shovel, and _FSD_ is the standard deviation.
+where for the nth line, _FM_ is the mean filling time at the nth shovel, and _FSD_ is the standard deviation.
 
 Next line:
 
