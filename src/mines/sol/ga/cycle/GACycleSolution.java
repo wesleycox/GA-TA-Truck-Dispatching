@@ -344,12 +344,14 @@ public class GACycleSolution extends Solution {
 				.initialise();
 			SelectionOperator<StringChromosome> selector = new KTournamentSelectionOperator<>(maximising,4);
 			GeneticAlgorithm<StringChromosome> ga = new RollingGeneticAlgorithm<>(ff,cBuilder,comp,operator,selector)
-					.setPopulationParams(popSize,selectionSize)
-					.setElitism(elitism)
-					.setMaximumGeneration(maxGen)
-					.setSamplingParams(bucketSize,resampleRate,resampleSize)
-					.initialise();
+				.setPopulationParams(popSize,selectionSize)
+				.setElitism(elitism)
+				.setMaximumGeneration(maxGen)
+				.setSamplingParams(bucketSize,resampleRate,resampleSize)
+				.initialise();
+			Debugger.print("Running genetic algorithm...\n");
 			StringChromosome best = ga.run();
+			Debugger.print("Genetic algorithm completed...\n");
 			return new StringController(best.getString());
 		}
 		else {

@@ -11,6 +11,7 @@ import mines.ga.string.multi.*;
 import mines.util.IntList;
 import mines.sol.string.MultiStringController;
 import mines.ga.string.multi.op.*;
+import mines.system.Debugger;
 import java.util.*;
 
 /**
@@ -456,7 +457,9 @@ public class GACycleSolutionN extends SolutionN {
 				.setSamplingParams(bucketSize,resampleRate,resampleSize)
 				.setAllowSurvivors(allowSurvivors)
 				.initialise();
+			Debugger.print("Running genetic algorithm...\n");
 			MultiStringChromosome best = ga.run();
+			Debugger.print("Genetic algorithm completed...\n");
 			int[][] crusherCycles = new int[numCrushers][];
 			int[][] shovelCycles = new int[numShovels][];
 			for (int i=0; i<numCrushers; i++) {
