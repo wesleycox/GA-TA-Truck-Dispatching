@@ -15,6 +15,10 @@ import java.util.*;
  * Li, Z. (1990). 
  * A methodology for the optimum control of shovel and truck operations in open-pit mining. 
  * Mining Science and Technology, 10(3), 337-340.
+ *
+ * This class makes use of the lp_solve library, which uses the GNU LGPL license.
+ * For further information:
+ * lpsolve.sourceforge.net/5.5
  */
 public class LPFlowConstructor {
 

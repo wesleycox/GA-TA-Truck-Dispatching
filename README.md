@@ -10,7 +10,7 @@ This requires Apache Ant; for installation instructions see:
 
 [http://ant.apache.org/](url)
 
-Additionally, some classes use the lp_solve software for mixed integer linear programming (MILP). 
+Additionally, some classes use the lp_solve software library for mixed integer linear programming (MILP), which is under the GNU LGPL license. 
 
 The Java .jar library for lp_solve has been included in this distribution. Include it the classpath when required. Further installation is required to make use of it however; for installation instructions see:
 
