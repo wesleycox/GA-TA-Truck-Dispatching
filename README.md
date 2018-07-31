@@ -20,7 +20,7 @@ Example main files are provided: Main.java and MainN.java, for simple and comple
 
 Main can be run as:
 
-java -cp .;classes;lib/lpsolve55.jar Main filename numSamples runtime solIndex...
+java -cp .;classes;lib/lpsolve55j.jar Main filename numSamples runtime solIndex...
 
 	filename	an valid input file path, e.g. input/problem1-1.in
 
